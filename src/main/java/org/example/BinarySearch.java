@@ -16,7 +16,7 @@ public class BinarySearch {
         int highValue = array.length - 1;
 
         while (lowValue <= highValue) {
-            int middleValue = lowValue + (highValue - lowValue) / 2;
+            int middleValue = (lowValue + highValue) / 2;
             if (valueToFind < array[middleValue]) {
                 highValue = middleValue - 1;
             } else if (valueToFind > array[middleValue]) {
